@@ -6,7 +6,7 @@ import IllustrationImg from '../../assets/illustration.png';
 import DiscordImg from '../../assets/discord.png';
 import { styles } from './styles';
 
-import { ButtonSignIn } from '../../components/ButtonSignIn';
+import { Button } from '../../components/Button';
 import { Background } from '../../components/Background';
 
 export function SignIn() {
@@ -32,7 +32,7 @@ export function SignIn() {
 						favoritos com seus amigos
 					</Text>
 
-					<ButtonSignIn icon={DiscordImg} title='Entrar com Discord' onPress={handleSignIn} />
+					<Button icon={DiscordImg} title='Entrar com Discord' onPress={handleSignIn} />
 				</View>
 			</View>
 		</Background>

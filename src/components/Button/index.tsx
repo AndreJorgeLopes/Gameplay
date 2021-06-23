@@ -9,7 +9,7 @@ type Props = RectButtonProps & {
 	icon?: ImageProps;
 };
 
-export function ButtonSignIn({ icon, title, ...rest }: Props) {
+export function Button({ icon, title, ...rest }: Props) {
 	const renderIcon = () => {
 		if (typeof icon === 'undefined') {
 			return;
