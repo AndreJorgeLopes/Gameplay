@@ -5,7 +5,7 @@ import IllustrationImg from '../../assets/illustration.png';
 import DiscordImg from '../../assets/discord.png';
 import { styles } from './styles';
 
-import { ButtonIcon } from '../../components/ButtonIcon';
+import { Button } from '../../components/Button';
 
 export function SignIn() {
 	return (
@@ -26,7 +26,7 @@ export function SignIn() {
 					favoritos com seus amigos
 				</Text>
 
-				<ButtonIcon icon={DiscordImg} title='Entrar com Discord' activeOpacity={0.7} />
+				<Button icon={DiscordImg} title='Entrar com Discord' activeOpacity={0.7} />
 			</View>
 		</View>
 	);
