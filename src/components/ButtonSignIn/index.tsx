@@ -1,14 +1,15 @@
 import React from 'react';
-import { Text, Image, View, TouchableOpacity, TouchableOpacityProps, ImageProps } from 'react-native';
+import { Text, Image, View, ImageProps } from 'react-native';
+import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 
 import { styles } from './styles';
 
-type Props = TouchableOpacityProps & {
+type Props = RectButtonProps & {
 	title: string;
 	icon?: ImageProps;
 };
 
-export function Button({ icon, title, ...rest }: Props) {
+export function ButtonSignIn({ icon, title, ...rest }: Props) {
 	const renderIcon = () => {
 		if (typeof icon === 'undefined') {
 			return;
@@ -17,10 +18,10 @@ export function Button({ icon, title, ...rest }: Props) {
 	};
 
 	return (
-		<TouchableOpacity style={styles.container} {...rest}>
+		<RectButton style={styles.container} {...rest}>
 			{renderIcon()}
 
 			<Text style={styles.title}>{title}</Text>
-		</TouchableOpacity>
+		</RectButton>
 	);
 }
