@@ -1,4 +1,6 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
+
 import AppLoading from 'expo-app-loading';
 
 import { useFonts } from 'expo-font';
@@ -19,5 +21,10 @@ export default function App() {
 		return <AppLoading />;
 	}
 
-	return <SignIn />;
+	return (
+		<>
+			<StatusBar barStyle='light-content' backgroundColor='transparent' translucent />
+			<SignIn />
+		</>
+	);
 }
